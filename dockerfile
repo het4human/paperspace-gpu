@@ -23,11 +23,6 @@ EXPOSE 8888
 # Run the following command to give a token(password) to your jupyter notebook.
 CMD jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='demo'
 
-
-
-
-
-
 #/paperspace-gpu
 # docker kill $(docker ps -aq)
 # docker rm $(docker ps -aq)
