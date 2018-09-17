@@ -2,5 +2,5 @@ numpy
 scipy
 protobuf
 jupyter
-nbzip
 tensorflow
+keras

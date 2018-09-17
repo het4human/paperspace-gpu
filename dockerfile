@@ -20,11 +20,6 @@ VOLUME ["/model1/data", "/model1/notebooks"]
 # Expose your port 8888
 EXPOSE 8888
 
-# enable extension for downloading file contents
-RUN jupyter serverextension enable --py nbzip --sys-prefix
-RUN jupyter nbextension install --py nbzip
-RUN jupyter nbextension enable --py nbzip
-
 # Run the following command to give a token(password) to your jupyter notebook.
 CMD jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='demo'
 
