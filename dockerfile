@@ -39,3 +39,6 @@ CMD jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token=
 # docker build -t aarongpu .
 # docker run -p 8887:8888 -v ~/home/paperspace/caffemodels/notebooks:/model1/notebooks -v ~/home/paperspace/caffemodels/data:/model1/data -d aarongpu
 # 184.105.157.188:8887/?token=demo
+
+
+#docker run --runtime=nvidia -p 8887:8888 -v ~/home/paperspace/caffemodels/notebooks:/model1/notebooks -v ~/home/paperspace/caffemodels/data:/model1/data -d aarongpu
