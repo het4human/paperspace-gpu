@@ -1,6 +1,6 @@
 
 # This is the docker image available. I am using cpu version here. If needed there is gpu version available.
-FROM bvlc/caffe:cpu
+FROM bvlc/caffe:gpu
 
 # Copy the file into docker
 COPY requirements.txt requirements.txt
@@ -27,5 +27,5 @@ CMD jupyter notebook --no-browser --ip=184.105.157.188 --allow-root --NotebookAp
 # docker build -t aarongpu .
 # docker kill $(docker ps -aq)
 # docker rm $(docker ps -aq)
-# docker run -p 8887:8888 -v ~/users/aaron/scripts/caffemodels/notebooks:/model1/notebooks -v ~/users/aaron/scripts/caffemodels/data:/model1/data -d aarongpu
+# docker run -p 8887:8888 -v ~/home/paperspace/caffemodels/notebooks:/model1/notebooks -v ~/home/paperspace/caffemodels/data:/model1/data -d aarongpu
 # 184.105.157.188:8887/?token=demo
