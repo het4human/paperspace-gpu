@@ -1,6 +1,6 @@
 
 # This is the docker image available. I am using cpu version here. If needed there is gpu version available.
-FROM bvlc/caffe:gpu
+FROM bvlc/caffe:cpu
 
 # Copy the file into docker
 COPY requirements.txt requirements.txt
@@ -33,12 +33,12 @@ CMD jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token=
 
 
 
-#/paperspace-gpu
-# docker kill $(docker ps -aq)
-# docker rm $(docker ps -aq)
-# docker build -t aarongpu .
-# docker run -p 8887:8888 -v ~/home/paperspace/caffemodels/notebooks:/model1/notebooks -v ~/home/paperspace/caffemodels/data:/model1/data -d aarongpu
-# 184.105.157.188:8887/?token=demo
+/paperspace-gpu
+ docker kill $(docker ps -aq)
+ docker rm $(docker ps -aq)
+ docker build -t aarongpu .
+ docker run -p 8887:8888 -v ~/home/paperspace/caffemodels/notebooks:/model1/notebooks -v ~/home/paperspace/caffemodels/data:/model1/data -d aarongpu
+ 184.105.157.188:8887/?token=demo
 
 
 #docker run --runtime=nvidia -p 8887:8888 -v ~/home/paperspace/caffemodels/notebooks:/model1/notebooks -v ~/home/paperspace/caffemodels/data:/model1/data -d aarongpu
