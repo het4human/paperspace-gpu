@@ -1,0 +1,3 @@
+[submodule "site-packages"]
+	path = site-packages
+	url = https://github.com/BVLC/caffe.git
