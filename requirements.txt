@@ -2,3 +2,4 @@ numpy
 scipy
 protobuf
 jupyter
+nbzip
