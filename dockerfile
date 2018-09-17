@@ -21,7 +21,7 @@ VOLUME ["/model1/data", "/model1/notebooks"]
 EXPOSE 8888
 
 # Run the following command to give a token(password) to your jupyter notebook.
-CMD jupyter notebook --no-browser --ip=184.105.157.188 --allow-root --NotebookApp.token='demo'
+CMD jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token='demo'
 
 #/users/aaron/scripts/dockerimage 
 # docker build -t aarongpu .
