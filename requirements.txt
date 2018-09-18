@@ -2,5 +2,5 @@ numpy
 scipy
 protobuf
 jupyter
-tensorflow==1.5.0
+tensorflow
 keras
